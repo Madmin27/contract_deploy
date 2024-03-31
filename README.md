@@ -28,4 +28,8 @@ projenizin kök dizininde bir .nvmrc dosyası oluşturabilir ve içine projeniz 
 
     npm install --save-dev @nomicfoundation/hardhat-toolbox
 
+contracts/Token.sol dosyasının içerisini doldur ve 
+    
+    npx hardhat compile
+
  
