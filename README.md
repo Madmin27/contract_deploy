@@ -32,8 +32,25 @@ aşağıdaki pluginleri yükle
 contracts/Token.sol yükle veya oluşturup içeriğini deeğiştir
 
     
-    npx hardhat compile
-    # npm install --save-dev @nomiclabs/hardhat-waffle
-    npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai
+    # npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai
+    npm install chai@4.3.4 --save-dev
+    npm install --save-dev @nomiclabs/hardhat-ethers ethers
+    
+   
+
+Install the Hardhat Ethers plugin:
+ 
+Ekle   hardhat.config.js  :
+ 
+    require("@nomiclabs/hardhat-ethers");
+
+     npx hardhat compile
+test klasörüne Token.js yükle
+Şimdi test edelim
+
+    npx hardhat test
+
+
+
 
  
