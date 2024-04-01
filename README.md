@@ -25,11 +25,15 @@ projenizin kök dizininde bir .nvmrc dosyası oluşturabilir ve içine projeniz 
 
     npm install --save-dev hardhat
     npm i hardhat
-
+    npx hardhat init
+aşağıdaki pluginleri yükle
     npm install --save-dev @nomicfoundation/hardhat-toolbox
 
-contracts/Token.sol dosyasının içerisini doldur ve 
+contracts/Token.sol yükle veya oluşturup içeriğini deeğiştir
+
     
     npx hardhat compile
+    # npm install --save-dev @nomiclabs/hardhat-waffle
+    npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai
 
  
