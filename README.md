@@ -26,21 +26,21 @@ projenizin kök dizininde bir .nvmrc dosyası oluşturabilir ve içine projeniz 
     npm install --save-dev hardhat
     npm i hardhat
     npx hardhat init
+    
 aşağıdaki pluginleri yükle
+
     npm install --save-dev @nomicfoundation/hardhat-toolbox
 
 contracts/Token.sol yükle veya oluşturup içeriğini deeğiştir
 
-    
-    # npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai
     npm install chai@4.3.4 --save-dev
-    npm install --save-dev @nomiclabs/hardhat-ethers ethers
-    
-   
+    # npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai
 
 Install the Hardhat Ethers plugin:
+
+    npm install --save-dev @nomiclabs/hardhat-ethers ethers
  
-Ekle   hardhat.config.js  :
+Ekle   hardhat.config.js içine :
  
     require("@nomiclabs/hardhat-ethers");
 
