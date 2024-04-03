@@ -1,4 +1,4 @@
-// test/Token.js
+// test/Token.js 0xF6D39Dda8997407110264acEc6a24345834cB639    44170d535842b4731898b6556c170c26e45c4a35068d25c148f97021354223f5 
 
 const { expect } = require("chai");
 
@@ -22,3 +22,4 @@ describe("Token contract", function () {
     });
   });
 });
+
