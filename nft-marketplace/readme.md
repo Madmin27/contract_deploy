@@ -114,3 +114,15 @@ Testi çalıştırmak
 komut satırınızdan çalıştırın. Eğer başarılı olduysa kontratlar adına her şey hazır demektir.
 ![image](https://github.com/Madmin27/contract_deploy/assets/94014225/9308ee50-4cbb-4670-b135-83b20e118690)
 
+## Frontend i Geliştirmek
+Artık akıllı sözleşme çalıştığına ve kullanıma hazır olduğuna göre, kullanıcı arayüzünü oluşturmaya başlayabiliriz.
+
+Tüm sayfalarda kalıcı olacak bazı gezinmeyi etkinleştirebilmemiz için bir düzen ayarlayalım. Aşağıdaki kod 4 adet menü elemanı oluşturacaktır. 
+Anasayfa
+NFT satma
+NFT leri görüntüleme ve 
+oluşturduğu NFT leri görme. 
+
+Bu bizim her sayfada kullanacağımız gelen çerçevemiz olacak.
+
+Bunu ayarlamak için pages/_app.js açın ve aşağıdaki kodla güncelleyin:
