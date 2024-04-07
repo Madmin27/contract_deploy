@@ -126,3 +126,39 @@ oluşturduğu NFT leri görme.
 Bu bizim her sayfada kullanacağımız gelen çerçevemiz olacak.
 
 Bunu ayarlamak için pages/_app.js açın ve aşağıdaki kodla güncelleyin:
+Sayfa yüklendiğinde, hala satılık olan ürünler için akıllı sözleşmeyi sorguluyor ve bunları, öğelerle ilgili meta veriler ve bunları satın almak için yer alan buton ile birlikte ekrana getiriyoruz.
+
+## NFT Listeleme ve Oluşturma
+
+Ardından, kullanıcıların dijital varlıkları oluşturmasına ve listelemesine olanak tanıyan sayfayı oluşturalım.
+
+Bu sayfada birkaç şey oluyor:
+
+Kullanıcı, dosyaları IPFS’ye yükleyebilir ve kaydedebilir
+Kullanıcı yeni bir benzersiz dijital öğe (NFT) oluşturabilir
+Kullanıcı, meta verileri ve öğenin fiyatını belirleyebilir ve pazarda satış için listeleyebilir.
+Kullanıcı bir öğe oluşturup listeledikten sonra, satılık tüm öğeleri görüntülemek için ana sayfaya yönlendirilir.
+
+Kişinin Aldığı NFT’leri Listeleme
+
+Market.sol akıllı sözleşmesinde, yalnızcafetchMyNFTs ile kullanıcının sahip olduğu öğeleri döndüren bir işlev oluşturduk .
+
+page/my-assets.js dosyasında göstermek için bu işlevden yararlanacağız.
+
+Bu işlevsellik anasayfadan farklıdır. Çünkü kullanıcıdan adresini sormamız ve bunu sözleşmede kullanmamız gerekir, bu nedenle kullanıcının bunları düzgün bir şekilde getirebilmesi için işlemi cüzdanı ile imzalaması gerekir.
+
+## Kullanıcının Oluşturduğu ve Sattığı NFT leri Gösterme
+
+Bu sayfa, fonksiyonu çağıran kullanıcının adresiyle eşleşen öğeleri döndüren Market.sol içinde yer alan fetchItemsCreated fonksiyonunu kullacak.
+
+soldkullanıcıya yalnızca satılmış öğeleri göstermek için kullanacağımız bir filtreleme alanı olacaktır.
+
+Aşağıdaki kod ile pages/creator-dashboard.js adlı yeni bir dosya oluşturun
+
+        npx hardhat node --port 8555
+bu açık kalsın başka bir terminalde
+
+        nft-marketplace
+
+
+        
