@@ -1,3 +1,4 @@
+// https://erayusta.medium.com
 Aşağıdakileri kullanarak full stack bir geliştirme yapacağız.
 
 Framework — Next.js
@@ -63,7 +64,11 @@ Son olarak, styles/globals.css içindeki kodu silin ve aşağıdaki ile güncell
 @tailwind utilities;
 
     npx hardhat  // 5.x kuruyor ama 4.x versiyonu kurulsa daha iyi olur sanki
+hardhatconfig.js dosyasının içini  version: "0.8.20", olarak kontrol et
+versiyon uyumsuzlukları için 
 
+    npm install @openzeppelin/contracts@4.x 
+    
   Hardhat kendi dosyalarını ve klasörlerini oluşturması gerekir. Ana dizinde yer alan hardhat.config.js dosyasını açın ve aşağıdaki gibi düzenleyin.
 
       /* hardhat.config.js */
@@ -93,4 +98,19 @@ Son olarak, styles/globals.css içindeki kodu silin ve aşağıdaki ile güncell
       }
     }
 
-  
+Çift slash olan mumbai kodlarının yer aldığı bölümde aslında test ağının yapılandırma kodlarıdır. Şimdi ana dizinde .secret adlı bir dosya oluşturun. Şimdilik boş kalsın daha sonra dolduracağız.
+
+contracts/NFT.sol 
+contracts/Market.sol 
+
+her ikisinde de pragma solidity ^0.8.20; olacak
+Artık sözleşmelerimiz ve ortamımız tamamlandı. Şimdi bir token basmak, satışa çıkarmak, bir kullanıcıya satmak ve token sorgulamak gibi işlevlerin çoğunu çalıştırmak için yerel bir test oluşturabiliriz. Hardhat in oluşturdğu “test/sample-test.js" dosyası oluşturun.
+
+Yukarda tüm sürecin test kodunu yazmış olduk. Yazılımda özellikle kontrat geliştirirken ilk katı kural mutlaka test yazılmasıdır.
+
+Testi çalıştırmak 
+                
+                npx hardhat test 
+komut satırınızdan çalıştırın. Eğer başarılı olduysa kontratlar adına her şey hazır demektir.
+![image](https://github.com/Madmin27/contract_deploy/assets/94014225/9308ee50-4cbb-4670-b135-83b20e118690)
+
